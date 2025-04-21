@@ -231,17 +231,22 @@
                     <p class="mb-3">こちらは最新の認識に近いです。</p>
                 </div>
             </div>
-            <div class="row mb-3 align-items-center">
-                <div class="col-md-6">
-                    <img src="https://unii-research.com/business/_next/image/?url=%2Fbusiness%2Fimages%2Fcase%2Fubie%2Fthumbnail.jpg&w=1200&q=75" alt="ユニーリサーチ導入事例 サムネイル" class="img-fluid rounded mb-2">
-                    <p class="mb-0"><small><a href="https://unii-research.com/business/case/ubie/" target="_blank" rel="noopener noreferrer">早くて手軽なリサーチが、現場の"自分ごと化"を後押し Ubieの1人目デザインリサーチャーが語るユニーリサーチの価値</a></small></p>
-                </div>
-                <div class="col-md-2">
-                </div>
-                <div class="col-md-4">
-                    <p>ユニーリサーチさまの事例紹介として掲載いただいた記事です。<br>2025年4月時点の考え方です。</p>
-                </div>
-            </div>
+            div class="row">
+                {{ ... existing code ... }}
+              </div>
+              {{<!-- align-items-center を align-items-start に変更 -->}}
+              <div class="row mb-3 align-items-start">
+                  <div class="col-md-6">
+                      <img src="https://unii-research.com/business/_next/image/?url=%2Fbusiness%2Fimages%2Fcase%2Fubie%2Fthumbnail.jpg&w=1200&q=75" alt="ユニーリサーチ導入事例 サムネイル" class="img-fluid rounded mb-2">
+                      <p class="mb-0"><small><a href="https://unii-research.com/business/case/ubie/" target="_blank" rel="noopener noreferrer">早くて手軽なリサーチが、現場の“自分ごと化”を後押し Ubieの1人目デザインリサーチャーが語るユニーリサーチの価値</a></small></p>
+                  </div>
+                  <div class="col-md-2">
+                      {{-- 空のカラム --}}
+                  </div>
+                  <div class="col-md-4">
+                      <p>ユニーリサーチさまの事例紹介として掲載いただいた記事です。<br>2025年4月時点の考え方です。</p>
+                  </div>
+              </div>
           </div>
       </section>
 
