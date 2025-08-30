@@ -7,6 +7,18 @@
     --light-green: #E7EAE7; /* ライトグリーン */
 }
 
+/* 全てのリンクのデフォルトスタイルをリセット */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ホバー時のみシグニファイアを表示 */
+a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
 /* リセットCSS */
 * {
     margin: 0;
@@ -16,7 +28,7 @@
 
 body {
     font-family: 'Noto Sans JP', 'Roboto', sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
     color: var(--navy);
     background-color: var(--white);
     margin: 0;
@@ -154,6 +166,8 @@ header h1 {
 .greeting-image img {
     width: 388px;
     height: 388px;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
 }
 
@@ -190,7 +204,7 @@ header h1 {
 
 /* Blog セクション */
 .blog {
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 .blog-title {
@@ -369,6 +383,11 @@ header h1 {
     align-items: flex-start;
 }
 
+/* Taiwan セクション専用 - gapを強制的に小さく */
+.right-content .blog-article-set {
+    gap: 0.1rem !important;
+}
+
 /* 解説文の左揃え統一 */
 .blog-article-set .blog-note-description {
     align-self: flex-start;
@@ -407,7 +426,7 @@ header h1 {
 
 /* メインコンテンツ */
 main {
-    padding: 2rem;
+    padding: 0;
 }
 
 /* サブセクション1: 2分割レイアウト */
@@ -416,6 +435,8 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     max-width: 996px;
+    width: 100%;
+    margin: 0 auto;
     align-items: start;
 }
 
@@ -454,7 +475,7 @@ main {
 .profile-name-section {
     color: var(--navy);
     margin: 0;
-    line-height: 1.75;
+    line-height: 1.5;
 }
 
 .profile-name-section .japanese-name {
@@ -474,18 +495,18 @@ main {
     color: var(--navy);
     margin: 0;
     font-weight: normal;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .profile-description-section {
     font-size: 0.85rem;
     color: var(--navy);
     margin: 0;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
-/* サブセクション1内の右側コンテンツ */
-.about .subsection1:first-of-type .right-content {
+/* サブセクション1内の右側コンテンツ（index.htmlの年表のみ） */
+.timeline-container {
     background-color: var(--light-green);
     border-radius: 8px;
     padding: 1.5rem;
@@ -554,14 +575,14 @@ main {
     font-size: 0.8rem;
     color: var(--navy);
     margin-bottom: 0.25rem;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .timeline-company {
     font-size: 0.9rem;
     color: var(--navy);
     font-weight: normal;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .timeline-other {
@@ -608,6 +629,16 @@ main {
     margin-top: 2rem !important;
 }
 
+/* 副業案内内の段落間隔 */
+.freelance-note p {
+    margin: 0 0 0.5rem 0;
+    line-height: 1.5;
+}
+
+.freelance-note p:last-child {
+    margin-bottom: 0;
+}
+
 /* Aboutセクションのsubsection1間隔調整 */
 .about .subsection1 + .subsection1 {
     margin-top: 4rem !important;
@@ -630,20 +661,29 @@ main {
 .subsection-title {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 1.1rem;
-    font-weight: 300;
-    color: var(--navy);
-    margin: 0.15rem 0 1.5rem 0;
-    line-height: 1.4;
-    text-indent: -1rem;
-    padding-left: 1rem;
+    font-weight: 400;
+    color: var(--green);
+    margin: 0.15rem 0 1rem 0;
+    line-height: 1.5;
+    position: relative;
+}
+
+/* Material Design Icons menu-right (デスクトップのみ) */
+.subsection-title::after {
+    content: '\e5cc';
+    font-family: 'Material Icons';
+    font-size: 1.2rem;
+    color: var(--green);
+    margin-left: 0.5rem;
+    vertical-align: middle;
 }
 
 /* 活動の軸 - 説明文 */
 .activity-description {
     font-size: 0.9rem;
     color: var(--navy);
-    margin: 0 0 0.75rem 0;
-    line-height: 1.75;
+    margin: 0 0 1rem 0;
+    line-height: 1.5;
 }
 
 .activity-description:last-child {
@@ -661,14 +701,14 @@ main {
     font-size: 0.9rem;
     color: var(--navy);
     margin: 0 0 0.5rem 0;
-    line-height: 1.75;
+    line-height: 1.5;
     position: relative;
     padding-left: 1rem;
 }
 
 .language-list li:before {
     content: "•";
-    color: var(--green);
+    color: var(--navy);
     position: absolute;
     left: 0;
 }
@@ -677,7 +717,7 @@ main {
 .activity-list,
 .skill-list {
     list-style: none;
-    margin: 0.5rem 0;
+    margin: 0.75rem 0;
     padding: 0 0 0 1rem;
 }
 
@@ -686,7 +726,7 @@ main {
     font-size: 0.9rem;
     color: var(--navy);
     margin: 0 0 0.5rem 0;
-    line-height: 1.75;
+    line-height: 1.5;
     position: relative;
     padding-left: 1rem;
 }
@@ -701,11 +741,11 @@ main {
 
 main section {
     margin-bottom: 3rem;
-    background: var(--white);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(44, 62, 80, 0.1);
-    border: 1px solid var(--green);
+}
+
+/* life.htmlのaboutセクションにも同じmargin-bottomを適用 */
+main .about {
+    margin-bottom: 3rem;
 }
 
 main section h2 {
@@ -759,11 +799,11 @@ main section h2 {
         text-align: center;
     }
     
-    main {
+    main:not(:has(.about)) {
         padding: 1rem 0;
     }
     
-    section {
+    section:not(.about) {
         padding: 1.5rem 0;
     }
     
@@ -792,9 +832,25 @@ main section h2 {
             max-width: 450px;
         }
         
-        /* Aboutの1つ目のsubsectionのみ2rem間隔 */
+        /* Aboutの1つ目のsubsectionのみ0rem間隔 */
         .about .subsection1:first-of-type {
-            gap: 2rem;
+            gap: 0rem;
+        }
+        
+        /* Elephant、Euro Vintage、Vibe Coding、OthersもMusicに合わせて0rem間隔 */
+        .about .subsection1:not(:first-of-type) {
+            gap: 0rem;
+        }
+        
+        /* サブセクションタイトルと文章の縦積み時gap調整 */
+        .about .subsection1:not(:first-of-type) {
+            gap: 1rem;
+        }
+        
+        /* 縦積み時の右側divの上部margin/paddingリセット */
+        .about .subsection1:not(:first-of-type) .right-content {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
         }
         
         /* Blogの1つ目のsubsectionのみ4rem間隔 */
@@ -802,13 +858,111 @@ main section h2 {
             gap: 4rem;
         }
         
+        /* Taiwan セクション全体のモバイル時上部margin - 3remに調整 .about .subsection1 .right-content {
+            margin-top: 3rem !important;
+        } */
+        
+        
+        /* Taiwan、Elephant、Euro Vintage、Vibe Codingセクションの左divに下部marginを追加（縦積み時のみ） */
+        .about .subsection1:nth-of-type(2) .left-content,
+        .about .subsection1:nth-of-type(3) .left-content,
+        .about .subsection1:nth-of-type(4) .left-content,
+        .about .subsection1:nth-of-type(5) .left-content {
+            margin-bottom: 2rem;
+        }
+        
+        /* Taiwan セクションの間隔調整 - 強制リセット */
+        .right-content iframe {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        .right-content iframe:not(:last-child) {
+            margin-bottom: 8px !important;
+        }
+        
+        .right-content iframe + iframe {
+            margin-top: 8px !important;
+        }
+        
+        /* note embed内部のmarginもリセット */
+        .note-embed {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        /* Taiwan象アイコンの上margin */
+        .right-content img[alt="象のアイコン"] {
+            margin-top: 8px !important;
+            margin-bottom: 0 !important;
+        }
+        
         /* Aboutセクションのレスポンシブ時間隔 */
         .about .subsection1 + .subsection1 {
             margin-top: 4rem !important;
         }
+        
+        /* life.htmlの導入文をモバイル時にコンパクトに */
+        .about > .activity-description {
+            margin-top: 3rem !important;
+            margin-bottom: 2rem !important;
+        }
+        
+        /* モバイル時はmenu-rightアイコンを非表示 */
+        .subsection-title::after {
+            display: none;
+        }
+        
+        /* index.htmlのBlogセクションのleft-content下部margin調整（縦積み時） */
+        .container section.blog .subsection1 .left-content {
+            margin-bottom: 0rem !important;
+        }
+        
+        /* life.htmlのサブセクションのleft-content下部margin調整（縦積み時） */
+        .about .subsection1 .left-content {
+            margin-bottom: 2rem !important;
+        }
+        
+        /* index.htmlのAboutセクションは上書きして0rem */
+        section.about#about .subsection1 .left-content {
+            margin-bottom: 0rem !important;
+        }
+        
+        /* モバイル時のグローバルナビゲーション間隔調整 */
+        .global-navigation {
+            margin-top: 0rem;
+        }
     
     .subsection2 {
         margin-left: 1rem;
+    }
+    
+    /* Greeting画像のレスポンシブ設定 */
+    .greeting-image img {
+        width: min(388px, 80vw);
+        height: min(388px, 80vw);
+    }
+    
+    .greeting-text {
+        font-size: 1.5rem;
+    }
+    
+    /* Footer copyright レスポンシブ調整 */
+    footer .grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .footer-copyright {
+        font-size: 0.4rem;
+        text-align: right;
+        white-space: normal;
+        word-break: break-word;
+        line-height: 1.2;
+        flex-shrink: 0;
+        max-width: 60%;
     }
 }
 
@@ -865,12 +1019,3 @@ footer .grid {
 }
 
 /* リンクスタイル */
-a {
-    color: var(--yellow);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--navy);
-    text-decoration: underline;
-}
