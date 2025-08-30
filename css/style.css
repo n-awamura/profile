@@ -858,9 +858,15 @@ main section h2 {
             gap: 4rem;
         }
         
-        /* Taiwan セクション全体のモバイル時上部margin - 3remに調整 .about .subsection1 .right-content {
+        /* Taiwan セクション全体のモバイル時上部margin - 3remに調整  */
+        .about .subsection1 .right-content {
             margin-top: 3rem !important;
-        } */
+        }
+
+         /* 基本的には上の方を使用、こっちは退避用  */
+        .about .subsection1 .right-content-2 {
+            margin-top: 0rem !important;
+        }
         
         
         /* Taiwan、Elephant、Euro Vintage、Vibe Codingセクションの左divに下部marginを追加（縦積み時のみ） */
