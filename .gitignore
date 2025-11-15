@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# documentation and original files (not needed for deployment)
+/past_files
+/md_bkup
+/DEPLOY_TO_EXISTING_REPO.md
+/GITHUB_PAGES_DEPLOY.md
