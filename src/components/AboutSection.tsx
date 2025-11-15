@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Timeline } from "@/components/Timeline";
+import { TextWithLineBreaks } from "@/components/TextWithLineBreaks";
 
 export function AboutSection() {
   return (
@@ -36,11 +37,15 @@ export function AboutSection() {
                 ワークプレイスエスノグラファ
               </p>
               <p>
-                広島出身、東京在住。ご連絡は
-                <Link href="#top" className="ml-1">
-                  上部のSNS
-                </Link>
-                からお願いいたします。
+                <span>広島出身、東京在住。</span>
+                <br />
+                <span>
+                  ご連絡は
+                  <Link href="#top" className="ml-1">
+                    上部のSNS
+                  </Link>
+                  からお願いいたします。
+                </span>
               </p>
             </div>
           </div>
@@ -56,16 +61,16 @@ export function AboutSection() {
             「できなかったことができるようになる、をつくる」
           </p>
           <p className="text-sm">
-            自分が拡張される楽しさを増やす仕事がしたいです。そのための重要な手段として生成AIがあると思っています。
+            <TextWithLineBreaks text="自分が拡張される楽しさを増やす仕事がしたいです。そのための重要な手段として生成AIがあると思っています。" />
           </p>
         </SubSection>
 
         <SubSection title="これまでとこれから">
           <p className="text-sm">
-            エスノグラフィ(活動の観察)のビジネス応用をコアにしてきました。
+            <TextWithLineBreaks text="エスノグラフィ(活動の観察)のビジネス応用をコアにしてきました。" />
           </p>
           <p className="text-sm">
-            直近6年間は、デジタルプロダクトの文脈で、エスノグラフィを応用したプロダクトリサーチ(プロダクトのためのデザインリサーチ、UXリサーチ、マーケティングリサーチ)を元にした探索・企画、それらをしやすい環境作り(ResearchOps)を、多職種と協働して行なってきました。
+            <TextWithLineBreaks text="直近6年間は、デジタルプロダクトの文脈で、エスノグラフィを応用したプロダクトリサーチ(プロダクトのためのデザインリサーチ、UXリサーチ、マーケティングリサーチ)を元にした探索・企画、それらをしやすい環境作り(ResearchOps)を、多職種と協働して行なってきました。" />
           </p>
           <p className="text-sm">
             リサーチ実務については2022年12月にリリースされた{" "}
@@ -79,22 +84,19 @@ export function AboutSection() {
             の企画、リサーチ環境については(現在進行形ではありますが)現職UbieでのResearchOps整備が、それぞれわかりやすい例だと思っています。
           </p>
           <p className="text-sm">
-            また、2024年末以降、リサーチプロセスやプロトタイピングにおける、Vibe
-            Codingなどの生成AI活用を盛んに行なっています。
+            <TextWithLineBreaks text="また、2024年末以降、リサーチプロセスやプロトタイピングにおける、Vibe Codingなどの生成AI活用を盛んに行なっています。" />
           </p>
           <p className="text-sm">
-            今後については、生成AI活用を前提とした、新しい協働の形に関心があります。プロダクトリサーチは引き続き強みだと思いますが、それに加え、Vibe
-            Codingなどを通して自分でいろいろ作ることをしたいです。自分ごとになる領域について、「生成AIを活用し、サービス開発において一人で担当する範囲を拡大すること」、「同じく拡大された人たちとのチーミング」をしていきたいし、それができる環境に身を置き続けたいと考えています。
+            <TextWithLineBreaks text="今後については、生成AI活用を前提とした、新しい協働の形に関心があります。プロダクトリサーチは引き続き強みだと思いますが、それに加え、Vibe Codingなどを通して自分でいろいろ作ることをしたいです。自分ごとになる領域について、「生成AIを活用し、サービス開発において一人で担当する範囲を拡大すること」、「同じく拡大された人たちとのチーミング」をしていきたいし、それができる環境に身を置き続けたいと考えています。" />
           </p>
         </SubSection>
 
         <SubSection title="スキルと特長">
           <p className="text-sm">
-            コアスキルは「エスノグラフィを応用したプロダクトリサーチとアイデア形成」、「リサーチの教育やResearchOpsづくり」、「それらにおけるVibe
-            Codingなどの生成AI活用」です。
+            <TextWithLineBreaks text="コアスキルは「エスノグラフィを応用したプロダクトリサーチとアイデア形成」、「リサーチの教育やResearchOpsづくり」、「それらにおけるVibe Codingなどの生成AI活用」です。" />
           </p>
           <p className="text-sm">
-            プロダクトリサーチは、以下の種別で理解しています (もちろん実践の中では重なり合うこともあります)。
+            <TextWithLineBreaks text="プロダクトリサーチは、以下の種別で理解しています (もちろん実践の中では重なり合うこともあります)。" />
           </p>
           <ul className="list-disc space-y-2 pl-6 text-sm text-site-navy">
             <li>
@@ -104,31 +106,45 @@ export function AboutSection() {
               プロダクト開発寄りのリサーチ。つまり、問題やソリューションの具体化のためのリサーチ
             </li>
           </ul>
-          <p className="text-sm">特長は以下です。</p>
+          <p className="text-sm">
+            <TextWithLineBreaks text="特長は以下です。" />
+          </p>
           <ul className="list-disc space-y-2 pl-6 text-sm text-site-navy">
-            <li>実戦的で、プロジェクトマネジメントに強い</li>
+            <li>
+              実戦的で、プロジェクトマネジメントに強い
+            </li>
             <li>
               エスノグラフィのほか、プロダクトリサーチは定性・定量ひと通り実戦レベルでできる
             </li>
-            <li>Vibe Codingなどの生成AI活用が得意</li>
-            <li>他職種との協創が得意</li>
+            <li>
+              Vibe Codingなどの生成AI活用が得意
+            </li>
+            <li>
+              他職種との協創が得意
+            </li>
             <li>
               多様な環境やテーマでの経験がある。事業会社、クライアントワークそれぞれのクオリティの捉え方を体感的に理解している。また、未来洞察からデジタルプロダクトまでの実務経験もある
             </li>
           </ul>
           <p className="text-sm">
-            ビジネスにおけるエスノグラフィ専業で食べていた時期が10年ほどある、という、少なくとも国内では珍しいであろう背景を持っています。エスノグラフィは、世界で初めてエスノグラフィをビジネス応用した{" "}
-            <a
-              href="https://www.sri.com/research/future-concepts-division/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              パロアルト研究所(PARC)
-            </a>
-            で身に着け、本流の一つを継いでいます。パロアルト研究所は、PC、イーサネットなどの概念を世界で初めて創り、情報社会の基盤を築いたことで世界に知られています。
+            <TextWithLineBreaks text="ビジネスにおけるエスノグラフィ専業で食べていた時期が10年ほどある、という、少なくとも国内では珍しいであろう背景を持っています。" />
+            <br />
+            <span>
+              エスノグラフィは、世界で初めてエスノグラフィをビジネス応用した{" "}
+              <a
+                href="https://www.sri.com/research/future-concepts-division/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                パロアルト研究所(PARC)
+              </a>
+              で身に着け、本流の一つを継いでいます。
+            </span>
+            <br />
+            <TextWithLineBreaks text="パロアルト研究所は、PC、イーサネットなどの概念を世界で初めて創り、情報社会の基盤を築いたことで世界に知られています。" />
           </p>
 
-          <div className="mt-12 rounded-lg bg-site-light-green p-4 text-sm text-site-navy">
+          <div className="mt-12 space-y-3 rounded-lg bg-site-light-green p-4 text-sm text-site-navy">
             <p className="font-semibold text-site-navy">副業のご案内</p>
             <p>
               上記の経験やスキルをベースとし、「その組織で必要十分なリサーチの形は何か」、「散逸したリサーチ結果を再活用可能にするためには」、「それらをどう生成AI駆動で行なうか」などを解決するお手伝いをする副業を、月数時間〜10時間弱程度でできます。
@@ -160,7 +176,9 @@ export function AboutSection() {
             ].map((lang) => (
               <li key={lang.term}>
                 <span className="font-semibold">{lang.term}：</span>
-                <span className="font-normal">{lang.desc}</span>
+                <span className="font-normal">
+                  {lang.desc}
+                </span>
               </li>
             ))}
           </ul>

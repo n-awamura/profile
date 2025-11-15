@@ -21,13 +21,17 @@ export const timelineItems: TimelineItem[] = [
     period: "〜2019年",
     company: "パロアルト研究所",
     companyUrl: "https://www.sri.com/research/future-concepts-division/",
+    showConnector: true,
   },
 ];
 
 export const timelineOther: TimelineOther = {
   title: "その他（抜粋）",
-  description:
-    "ラクスル株式会社（業務委託）／慶應義塾大学文学部非常勤講師／日本学術振興会特別研究員DC2",
+  descriptions: [
+    "ラクスル株式会社（業務委託）",
+    "慶應義塾大学文学部非常勤講師",
+    "日本学術振興会特別研究員DC2",
+  ],
 };
 
 

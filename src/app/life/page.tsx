@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { LifeSection } from "@/components/LifeSection";
 import { HeaderAccessibleNav } from "@/components/HeaderAccessibleNav";
 import { lifeIntro, lifeOutro, lifeSections } from "@/data/life";
+import { TextWithLineBreaks } from "@/components/TextWithLineBreaks";
 import { ToTop } from "@/components/ToTop";
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export default function LifePage() {
     <>
       <main className="container w-full">
         <p className="mt-12 mb-16 text-sm leading-relaxed text-site-navy/80">
-          {lifeIntro}
+          <TextWithLineBreaks text={lifeIntro} />
         </p>
         <HeaderAccessibleNav linkHref="/" linkLabel="to Side A" />
         <div className="space-y-16">
@@ -23,7 +24,7 @@ export default function LifePage() {
           ))}
         </div>
         <p className="mt-24 mb-16 text-sm leading-relaxed text-site-navy/80">
-          {lifeOutro}
+          <TextWithLineBreaks text={lifeOutro} />
         </p>
       </main>
       <ToTop />

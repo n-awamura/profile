@@ -15,11 +15,12 @@ export interface TimelineItem {
   company: string;
   companyUrl: string;
   isCurrent?: boolean;
+  showConnector?: boolean;
 }
 
 export interface TimelineOther {
   title: string;
-  description: string;
+  descriptions: string[];
 }
 
 export type BlogEntryType = "note" | "article";

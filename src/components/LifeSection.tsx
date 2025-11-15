@@ -20,7 +20,7 @@ export function LifeSection({ section }: LifeSectionProps) {
       <div className="grid grid-cols-2 gap-8 mobile:grid-cols-1 mobile:gap-0">
         <div className="space-y-4 text-sm leading-relaxed text-site-navy mobile:mb-8">
           {section.descriptions.map((desc) => (
-            <p key={desc} dangerouslySetInnerHTML={{ __html: desc }} />
+            <p key={desc} dangerouslySetInnerHTML={{ __html: formatDescriptionText(desc) }} />
           ))}
         </div>
         <div className={rightColumnClass}>
@@ -44,6 +44,10 @@ export function LifeSection({ section }: LifeSectionProps) {
       </div>
     </section>
   );
+}
+
+function formatDescriptionText(text: string) {
+  return text.replace(/。/g, "。<br />");
 }
 
 function ImageFigure({

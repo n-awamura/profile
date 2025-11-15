@@ -3,6 +3,7 @@ import { NoteEmbed } from "@/components/NoteEmbed";
 import type { BlogEntry } from "@/types";
 import { BlogCard } from "@/components/BlogCard";
 import Link from "next/link";
+import { TextWithLineBreaks } from "@/components/TextWithLineBreaks";
 
 export function BlogSection() {
   const rows: BlogEntry[][] = [];
@@ -54,7 +55,9 @@ function NoteArticle({ entry }: { entry: BlogEntry }) {
       )}
       <div className="space-y-2 leading-relaxed">
         {entry.description.map((text) => (
-          <p key={text}>{text}</p>
+          <p key={text}>
+            <TextWithLineBreaks text={text} />
+          </p>
         ))}
       </div>
     </article>

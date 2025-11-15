@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { BlogEntry } from "@/types";
+import { TextWithLineBreaks } from "@/components/TextWithLineBreaks";
 
 interface BlogCardProps {
   entry: BlogEntry;
@@ -34,7 +35,7 @@ export function BlogCard({ entry }: BlogCardProps) {
       </Link>
       {entry.description.map((text) => (
         <p key={text} className="leading-relaxed">
-          {text}
+          <TextWithLineBreaks text={text} />
         </p>
       ))}
     </div>
