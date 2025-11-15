@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export", // 静的エクスポートを有効化
+  basePath: "/profile", // GitHub Pages: n-awamura.github.io/profile
+  assetPrefix: "/profile/", // GitHub Pages: n-awamura.github.io/profile
   images: {
     unoptimized: true, // GitHub Pagesでは画像最適化が使えないため
     remotePatterns: [
@@ -11,7 +13,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // カスタムドメイン (n-awamura.com) を使用するため、basePath と assetPrefix は不要
 };
 
 export default nextConfig;
