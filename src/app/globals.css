@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --white: #f8f8f6;
+  --green: #859a93;
+  --yellow: #fdcb6e;
+  --navy: #2c3e50;
+  --light-green: #e7eae7;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 450px;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--white);
+  color: var(--navy);
+  font-family: var(--font-noto), "Noto Sans JP", "Roboto", system-ui,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 150ms ease, color 150ms ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.note-embed {
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+  display: block;
+}
+
+.subsection-title {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.subsection-title::after {
+  content: "\e5cc";
+  font-family: "Material Icons";
+  font-size: 1.2rem;
+  color: var(--green);
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+  .subsection-title::after {
+    display: none;
+  }
+}
+
+.life-accent {
+  font-size: 0.8rem;
+  color: rgba(44, 62, 80, 0.8);
+}
+
+.to-top-link {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.to-top-link img {
+  width: 24px;
+  height: 24px;
+  transition: filter 200ms ease;
+}
+
+.to-top-link:hover img {
+  filter: brightness(0) saturate(100%) invert(59%) sepia(8%)
+    saturate(1167%) hue-rotate(119deg) brightness(95%) contrast(89%);
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--navy);
+    font-weight: 500;
+  }
+
+  p {
+    color: var(--navy);
+    line-height: 1.5;
+  }
+}
