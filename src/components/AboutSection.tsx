@@ -15,14 +15,16 @@ export function AboutSection() {
         <div className="max-w-md space-y-6">
           <div className="grid grid-cols-[2fr_3fr] items-start gap-4">
             <div className="flex items-center justify-center">
-              <Image
-                src="/img/me.png"
-                alt="粟村倫久"
-                width={144}
-                height={144}
-                priority
-                className="h-36 w-36 rounded-full object-cover aspect-square"
-              />
+              <div className="relative h-36 w-36 shrink-0 mobile:h-32 mobile:w-32">
+                <Image
+                  src="/img/me.png"
+                  alt="粟村倫久"
+                  fill
+                  priority
+                  sizes="(max-width: 640px) 128px, 144px"
+                  className="rounded-full object-cover"
+                />
+              </div>
             </div>
             <div className="space-y-3 text-sm text-site-navy">
               <p className="text-lg font-light text-site-navy">
@@ -126,6 +128,9 @@ export function AboutSection() {
               多様な環境やテーマでの経験がある。事業会社、クライアントワークそれぞれのクオリティの捉え方を体感的に理解している。また、未来洞察からデジタルプロダクトまでの実務経験もある
             </li>
           </ul>
+          <p className="text-sm">
+            Vibe Codingについては、主としてCursorを利用し、分析やプロトタイピングを行ないます。Cursorがある前提で、Google Apps Script(GAS)やフロントエンド系の言語(HTML/CSS、JavaScript、Next.js)をある程度扱えます。関連して、Figmaも使います。
+          </p>
           <p className="text-sm">
             <TextWithLineBreaks text="ビジネスにおけるエスノグラフィ専業で食べていた時期が10年ほどある、という、少なくとも国内では珍しいであろう背景を持っています。" />
             <br />
