@@ -73,7 +73,7 @@ function ImageFigure({
 
   return (
     <figure className="space-y-2">
-      <div className="relative w-1/2 overflow-hidden rounded-lg bg-site-light-green">
+      <div className="relative w-1/2 overflow-hidden bg-site-light-green">
         <Image
           src={image.src}
           alt={image.alt}
