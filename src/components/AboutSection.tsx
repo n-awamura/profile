@@ -129,7 +129,8 @@ export function AboutSection() {
             </li>
           </ul>
           <p className="text-sm">
-            ツールはCursor、Figmaを使います。Cursorがある前提で、Google Apps Script(GAS)、HTML/CSS、JavaScript、Next.jsをある程度扱えます。</p>
+            <TextWithLineBreaks text="ツールはCursor、Figmaを使います。Cursorがある前提で、Google Apps Script(GAS)、HTML/CSS、JavaScript、Next.jsをある程度扱えます。" />
+          </p>
           <p className="text-sm">
             <TextWithLineBreaks text="ビジネスにおけるエスノグラフィ専業で食べていた時期が10年ほどある、という、少なくとも国内では珍しいであろう背景を持っています。" />
             <br />
