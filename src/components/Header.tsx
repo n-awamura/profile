@@ -27,7 +27,7 @@ export function Header() {
       <div className="ml-auto flex h-full flex-col items-end justify-between py-1">
         <Link
           href={sideLinkHref}
-          className="inline-flex items-center justify-center border border-site-green px-2 py-0.5 text-xs font-normal tracking-[0.03em] text-site-green transition hover:no-underline"
+          className="inline-flex items-center justify-center border border-site-green bg-site-green px-2 py-0.5 text-xs font-normal tracking-[0.03em] text-site-white transition hover:no-underline"
         >
           {sideLinkLabel}
         </Link>

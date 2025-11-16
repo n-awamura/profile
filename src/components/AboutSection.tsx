@@ -129,8 +129,7 @@ export function AboutSection() {
             </li>
           </ul>
           <p className="text-sm">
-            Vibe Codingについては、主としてCursorを利用し、分析やプロトタイピングを行ないます。Cursorがある前提で、Google Apps Script(GAS)やフロントエンド系の言語(HTML/CSS、JavaScript、Next.js)をある程度扱えます。関連して、Figmaも使います。
-          </p>
+            ツールはCursor、Figmaを使います。Cursorがある前提で、Google Apps Script(GAS)、HTML/CSS、JavaScript、Next.jsをある程度扱えます。</p>
           <p className="text-sm">
             <TextWithLineBreaks text="ビジネスにおけるエスノグラフィ専業で食べていた時期が10年ほどある、という、少なくとも国内では珍しいであろう背景を持っています。" />
             <br />
