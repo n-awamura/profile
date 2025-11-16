@@ -2,7 +2,7 @@ import type { NavLink, SocialLink } from "@/types";
 
 export const SITE_TITLE = "Norihisa Awamura's Website";
 export const SITE_DESCRIPTION =
-  "プロダクトリサーチャー／ワークプレイスエスノグラファ Norihisa Awamura のポートフォリオサイト。活動やリサーチ事例、趣味を紹介しています。";
+  "粟村倫久(Norihisa Awamura)のウェブサイトです。";
 
 export const COLOR_PALETTE = {
   white: "#F8F8F6",
