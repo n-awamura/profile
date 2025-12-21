@@ -132,7 +132,7 @@ export function AboutSection() {
             <TextWithLineBreaks text="ツールはCursor、Figmaを使います。" />
           </p>
           <p className="text-sm">
-            <TextWithLineBreaks text="Cursorがある前提で、Google Apps Script(GAS)、HTML/CSS、JavaScript、およびフロントエンドの関連フレームワーク(Next.js、React+Viteなど)やデザインシステムをある程度扱えます。" />
+            <TextWithLineBreaks text="Cursorがある前提で、Google Apps Script(GAS)、HTML/CSS、JavaScript、および関連フレームワーク(Next.js、React+Viteなど)やデザインシステムをある程度扱えます。" />
           </p>
           <p className="text-sm">
             <TextWithLineBreaks text="ビジネスにおけるエスノグラフィ専業で食べていた時期が10年ほどある、という、少なくとも国内では珍しいであろう背景を持っています。" />
