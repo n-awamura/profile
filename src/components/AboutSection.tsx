@@ -70,8 +70,6 @@ export function AboutSection() {
         <SubSection title="これまでとこれから">
           <p className="text-sm">
             <TextWithLineBreaks text="直近6年間は、デジタルプロダクトの文脈で、エスノグラフィ(活動の観察)を応用したプロダクトリサーチ(プロダクトのためのデザインリサーチ、UXリサーチ、マーケティングリサーチ)を元にした探索・企画、それらをしやすい環境作り(ResearchOps)を、多職種と協働して行なってきました。" />
-            <br />
-            「リサーチを通して得られた一次情報やそれに紐づく知見・考察をベースに、ステークホルダーが同じストーリーを協創・共有できるようにする」スキルがその中心にあります。
           </p>
           <p className="text-sm">
             リサーチ実務については2022年12月にリリースされた{" "}
@@ -94,7 +92,9 @@ export function AboutSection() {
 
         <SubSection title="スキルと特長">
           <p className="text-sm">
-            <TextWithLineBreaks text="コアスキルは「エスノグラフィを応用したプロダクトリサーチとアイデア形成」、「リサーチの教育やResearchOpsづくり」、「それらにおけるVibe Codingなどの生成AI活用」です。" />
+            「リサーチを通して得られた一次情報やそれに紐づく知見・考察をベースに、ステークホルダーが同じストーリーを協創・共有できるようにする」ことを得意とします。
+            <br />
+            <TextWithLineBreaks text="これは、「エスノグラフィを応用したプロダクトリサーチとアイデア形成」、「リサーチの教育やResearchOpsづくり」、「プロジェクトマネジメント」、「Vibe Codingなどの生成AI活用」のスキルから構成されます。" />
           </p>
           <p className="text-sm">
             <TextWithLineBreaks text="プロダクトリサーチは、以下の種別で理解しています (もちろん実践の中では重なり合うこともあります)。" />
@@ -108,25 +108,10 @@ export function AboutSection() {
             </li>
           </ul>
           <p className="text-sm">
-            <TextWithLineBreaks text="特長は以下です。" />
+            <TextWithLineBreaks text="プロダクトリサーチは、定性・定量ひと通り実戦レベルでできます。" />
+            <br />
+            <TextWithLineBreaks text="常に事業において実用的であることを目指して行ないます。" />
           </p>
-          <ul className="list-disc space-y-2 pl-6 text-sm text-site-navy">
-            <li>
-              実戦的で、プロジェクトマネジメントに強い
-            </li>
-            <li>
-              エスノグラフィのほか、プロダクトリサーチは定性・定量ひと通り実戦レベルでできる
-            </li>
-            <li>
-              Vibe Codingなどの生成AI活用が得意
-            </li>
-            <li>
-              他職種との協創が得意
-            </li>
-            <li>
-              多様な環境やテーマでの経験がある。事業会社、クライアントワークそれぞれのクオリティの捉え方を体感的に理解している。また、未来洞察からデジタルプロダクトまでの実務経験もある
-            </li>
-          </ul>
           <p className="text-sm">
             <TextWithLineBreaks text="ツールはCursor、Figmaを使います。Cursorがある前提で、Google Apps Script(GAS)、HTML/CSS、JavaScript、および関連フレームワーク(Next.js、React+Viteなど)やデザインシステムをある程度扱えます。" />
           </p>
@@ -146,6 +131,9 @@ export function AboutSection() {
             </span>
             <br />
             <TextWithLineBreaks text="パロアルト研究所は、PC、イーサネットなどの概念を世界で初めて創り、情報社会の基盤を築いたことで世界に知られています。" />
+          </p>
+          <p className="text-sm">
+            <TextWithLineBreaks text="多様な環境やテーマでの経験があります。事業会社、クライアントワークそれぞれのクオリティの捉え方を体感的に理解しています。また、未来洞察からデジタルプロダクトまでの実務経験もあります。" />
           </p>
 
           <div className="mt-12 space-y-3 rounded-lg bg-site-light-green p-4 text-sm text-site-navy">
