@@ -67,12 +67,15 @@ export function AboutSection() {
           </p>
         </SubSection>
 
-        <SubSection title="これまでとこれから">
+        <SubSection title="スキルとその他の特長">
+          <h4 className="text-sm font-semibold text-site-navy mb-2">スキル</h4>
           <p className="text-sm">
-            <TextWithLineBreaks text="直近6年間は、デジタルプロダクトの文脈で、エスノグラフィ(活動の観察)を応用したプロダクトリサーチ(プロダクトのためのデザインリサーチ、UXリサーチ、マーケティングリサーチ)を元にした探索・企画、それらをしやすい環境作り(ResearchOps)を、多職種と協働して行なってきました。" />
+            「プロダクトリサーチ(プロダクトのためのデザインリサーチ、UXリサーチ、マーケティングリサーチ)を通して得られた一次情報やそれに紐づく知見・考察をベースに、ステークホルダーが同じストーリーを協創・共有できるようにする」ことを得意とします。
+            <br />
+            <TextWithLineBreaks text="これは、「エスノグラフィを応用したプロダクトリサーチとアイデア形成」、「リサーチの教育やResearchOpsづくり」、「プロジェクトマネジメント」、「Vibe Codingなどの生成AI活用」のスキルから構成されます。" />
           </p>
           <p className="text-sm">
-            リサーチ実務については2022年12月にリリースされた{" "}
+            以上についての具体的実績として、リサーチ実務については2022年12月にリリースされた{" "}
             <a
               href="https://support.freee.co.jp/hc/ja/articles/12527153459737"
               target="_blank"
@@ -81,20 +84,11 @@ export function AboutSection() {
               freee会計「修正待ちリスト」
             </a>
             の企画、リサーチ環境については(現在進行形ではありますが)現職UbieでのResearchOps整備が、それぞれわかりやすい例だと思っています。
-          </p>
-          <p className="text-sm">
-            <TextWithLineBreaks text="また、2024年末以降、リサーチプロセスやプロトタイピングにおける、Vibe Codingなどの生成AI活用を盛んに行なっています。" />
-          </p>
-          <p className="text-sm">
-            <TextWithLineBreaks text="今後については、生成AI活用を前提とした、新しい協働の形に関心があります。プロダクトリサーチは引き続き強みだと思いますが、それに加え、Vibe Codingなどを通して自分でいろいろ作ることをしたいです。自分ごとになる領域について、「生成AIを活用し、サービス開発において一人で担当する範囲を拡大すること」、「同じく拡大された人たちとのチーミング」をしていきたいし、それができる環境に身を置き続けたいと考えています。" />
-          </p>
-        </SubSection>
-
-        <SubSection title="スキルと特長">
-          <p className="text-sm">
-            「リサーチを通して得られた一次情報やそれに紐づく知見・考察をベースに、ステークホルダーが同じストーリーを協創・共有できるようにする」ことを得意とします。
             <br />
-            <TextWithLineBreaks text="これは、「エスノグラフィを応用したプロダクトリサーチとアイデア形成」、「リサーチの教育やResearchOpsづくり」、「プロジェクトマネジメント」、「Vibe Codingなどの生成AI活用」のスキルから構成されます。" />
+            <Link href="#blog" className="text-site-navy underline">
+              下のBlog記事
+            </Link>
+            に、具体的な内容をまとめています。
           </p>
           <p className="text-sm">
             <TextWithLineBreaks text="プロダクトリサーチは、以下の種別で理解しています (もちろん実践の中では重なり合うこともあります)。" />
@@ -115,6 +109,7 @@ export function AboutSection() {
           <p className="text-sm">
             <TextWithLineBreaks text="ツールはCursor、Figmaを使います。Cursorがある前提で、Google Apps Script(GAS)、HTML/CSS、JavaScript、および関連フレームワーク(Next.js、React+Viteなど)やデザインシステムをある程度扱えます。" />
           </p>
+          <h4 className="text-sm font-semibold text-site-navy mb-2">その他の特長</h4>
           <p className="text-sm">
             <TextWithLineBreaks text="ビジネスにおけるエスノグラフィ専業で食べていた時期が10年ほどある、という、少なくとも国内では珍しいであろう背景を持っています。" />
             <br />
@@ -150,6 +145,12 @@ export function AboutSection() {
               から連絡くださいませ。
             </p>
           </div>
+        </SubSection>
+
+        <SubSection title="これから">
+          <p className="text-sm">
+            <TextWithLineBreaks text="今後については、生成AI活用を前提とした、新しい協働の形に関心があります。プロダクトリサーチは引き続き強みだと思いますが、それに加え、Vibe Codingなどを通して自分でいろいろ作ることをしたいです。自分ごとになる領域について、「生成AIを活用し、サービス開発において一人で担当する範囲を拡大すること」、「同じく拡大された人たちとのチーミング」をしていきたいし、それができる環境に身を置き続けたいと考えています。" />
+          </p>
         </SubSection>
 
         <SubSection title="言語">
