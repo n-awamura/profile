@@ -73,14 +73,13 @@ export function AboutSection() {
             「プロダクトリサーチ(プロダクトのためのデザインリサーチ、UXリサーチ、マーケティングリサーチ)を通して得られた一次情報やそれに紐づく知見・考察をベースに、ステークホルダーが同じストーリーを協創・共有できるようにする」ことを得意とします。
             <br />
             これは以下のスキルから構成されます。
-            <ul className="list-disc space-y-1 pl-6 text-sm text-site-navy mt-2">
-              <li>エスノグラフィを応用したプロダクトリサーチとアイデア形成</li>
-              <li>リサーチの教育やResearchOpsづくり</li>
-              <li>プロジェクトマネジメント</li>
-              <li>Vibe Codingなどの生成AI活用</li>
-            </ul>
-            
           </p>
+          <ul className="list-disc space-y-1 pl-6 text-sm text-site-navy mt-2">
+            <li>エスノグラフィを応用したプロダクトリサーチとアイデア形成</li>
+            <li>リサーチの教育やResearchOps</li>
+            <li>プロジェクトマネジメント</li>
+            <li>Vibe Codingなどの生成AI活用</li>
+          </ul>
           <p className="text-sm">
             具体的実績として、リサーチ実務については2022年12月にリリースされた{" "}
             <a
