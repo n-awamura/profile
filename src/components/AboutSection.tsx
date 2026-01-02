@@ -67,7 +67,7 @@ export function AboutSection() {
           </p>
         </SubSection>
 
-        <SubSection title="スキルとその他の特長">
+        <SubSection title="スキルなど">
           <h4 className="text-sm font-semibold text-site-navy mb-2">スキル</h4>
           <p className="text-sm">
             「プロダクトリサーチ(プロダクトのためのデザインリサーチ、UXリサーチ、マーケティングリサーチ)を通して得られた一次情報やそれに紐づく知見・考察をベースに、ステークホルダーが同じストーリーを協創・共有できるようにする」ことを得意とします。
