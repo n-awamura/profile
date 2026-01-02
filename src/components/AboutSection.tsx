@@ -74,12 +74,14 @@ export function AboutSection() {
             <br />
             これは以下のスキルから構成されます。
           </p>
-          <ul className="list-disc space-y-1 pl-6 text-sm text-site-navy mt-2">
-            <li>エスノグラフィを応用したプロダクトリサーチとアイデア形成</li>
-            <li>リサーチの教育やResearchOps</li>
-            <li>プロジェクトマネジメント</li>
-            <li>Vibe Codingなどの生成AI活用</li>
-          </ul>
+          <section>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-site-navy mt-2" role="list">
+              <li>エスノグラフィを応用したプロダクトリサーチとアイデア形成</li>
+              <li>リサーチの教育やResearchOps</li>
+              <li>プロジェクトマネジメント</li>
+              <li>Vibe Codingなどの生成AI活用</li>
+            </ul>
+          </section>
           <p className="text-sm">
             具体的実績として、リサーチ実務については2022年12月にリリースされた{" "}
             <a
@@ -99,14 +101,16 @@ export function AboutSection() {
           <p className="text-sm">
             <TextWithLineBreaks text="プロダクトリサーチは、以下の種別で理解しています (もちろん実践の中では重なり合うこともあります)。" />
           </p>
-          <ul className="list-disc space-y-2 pl-6 text-sm text-site-navy">
-            <li>
-              マーケティング寄りのリサーチ。つまり、注力すべき領域(機会領域)の特定と輪郭付けを行なうリサーチ
-            </li>
-            <li>
-              プロダクト開発寄りのリサーチ。つまり、問題やソリューションの具体化のためのリサーチ
-            </li>
-          </ul>
+          <section>
+            <ul className="list-disc space-y-2 pl-6 text-sm text-site-navy" role="list">
+              <li>
+                マーケティング寄りのリサーチ。つまり、注力すべき領域(機会領域)の特定と輪郭付けを行なうリサーチ
+              </li>
+              <li>
+                プロダクト開発寄りのリサーチ。つまり、問題やソリューションの具体化のためのリサーチ
+              </li>
+            </ul>
+          </section>
           <p className="text-sm">
             <TextWithLineBreaks text="プロダクトリサーチは、定性・定量ひと通り実戦レベルでできます。" />
             <br />
@@ -162,27 +166,29 @@ export function AboutSection() {
         </SubSection>
 
         <SubSection title="言語">
-          <ul className="list-disc space-y-2 pl-6 text-sm text-site-navy">
-            {[
-              { term: "日本語", desc: "母語" },
-              {
-                term: "英語",
-                desc:
-                  "第2言語。ビジネスにおける意思疎通に問題がないくらい。2011年時点でTOEIC930",
-              },
-              {
-                term: "台湾華語",
-                desc: "第3言語。2024年の中盤から勉強を始め、TOCFL BandAを目指すくらい",
-              },
-            ].map((lang) => (
-              <li key={lang.term}>
-                <span className="font-semibold">{lang.term}：</span>
-                <span className="font-normal">
-                  {lang.desc}
-                </span>
-              </li>
-            ))}
-          </ul>
+          <section>
+            <ul className="list-disc space-y-2 pl-6 text-sm text-site-navy" role="list">
+              {[
+                { term: "日本語", desc: "母語" },
+                {
+                  term: "英語",
+                  desc:
+                    "第2言語。ビジネスにおける意思疎通に問題がないくらい。2011年時点でTOEIC930",
+                },
+                {
+                  term: "台湾華語",
+                  desc: "第3言語。2024年の中盤から勉強を始め、TOCFL BandAを目指すくらい",
+                },
+              ].map((lang) => (
+                <li key={lang.term}>
+                  <span className="font-semibold">{lang.term}：</span>
+                  <span className="font-normal">
+                    {lang.desc}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
         </SubSection>
       </div>
     </section>
