@@ -69,10 +69,10 @@ export function AboutSection() {
 
         <SubSection title="これまでとこれから">
           <p className="text-sm">
-            <TextWithLineBreaks text="エスノグラフィ(活動の観察)のビジネス応用をコアにしてきました。" />
+            <TextWithLineBreaks text="「リサーチを通して得られた一次情報やそれに紐づく知見・考察をベースに、ステークホルダーが同じストーリーを協創・共有できるようにすること」が得意です。" />
           </p>
           <p className="text-sm">
-            <TextWithLineBreaks text="直近6年間は、デジタルプロダクトの文脈で、エスノグラフィを応用したプロダクトリサーチ(プロダクトのためのデザインリサーチ、UXリサーチ、マーケティングリサーチ)を元にした探索・企画、それらをしやすい環境作り(ResearchOps)を、多職種と協働して行なってきました。" />
+            <TextWithLineBreaks text="直近6年間は、デジタルプロダクトの文脈で、エスノグラフィ(活動の観察)を応用したプロダクトリサーチ(プロダクトのためのデザインリサーチ、UXリサーチ、マーケティングリサーチ)を元にした探索・企画、それらをしやすい環境作り(ResearchOps)を、多職種と協働して行なってきました。" />
           </p>
           <p className="text-sm">
             リサーチ実務については2022年12月にリリースされた{" "}
