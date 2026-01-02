@@ -104,6 +104,8 @@ export function AboutSection() {
           <p className="text-sm">
             <TextWithLineBreaks text="プロダクトリサーチは、定性・定量ひと通り実戦レベルでできます。" />
             <br />
+            <TextWithLineBreaks text="ワークショップも多用します。" />
+            <br />
             <TextWithLineBreaks text="常に事業において実用的であることを目指して行ないます。" />
           </p>
           <p className="text-sm">
