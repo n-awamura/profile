@@ -75,7 +75,7 @@ export function AboutSection() {
             <TextWithLineBreaks text="これは、「エスノグラフィを応用したプロダクトリサーチとアイデア形成」、「リサーチの教育やResearchOpsづくり」、「プロジェクトマネジメント」、「Vibe Codingなどの生成AI活用」のスキルから構成されます。" />
           </p>
           <p className="text-sm">
-            以上についての具体的実績として、リサーチ実務については2022年12月にリリースされた{" "}
+            具体的実績として、リサーチ実務については2022年12月にリリースされた{" "}
             <a
               href="https://support.freee.co.jp/hc/ja/articles/12527153459737"
               target="_blank"
